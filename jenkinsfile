@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout from Git Repo') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Emmaikeji/Buymore-app.git'
+            }
+        }
+    }
+}
